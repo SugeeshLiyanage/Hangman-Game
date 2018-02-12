@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>index</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="main.js"></script>
-</head>
-<body>
-    
-</body>
+<html lang="en">
+
+	<head>
+    	<meta charset="UTF-8">
+     	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Links to reset, bootstrap, font-awesome and my custom css sheets. -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		
+		<!-- Title displayed on tab. -->
+		<title>80's Hangman</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Hangman</h1>
+					<h2>70's Style</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-3 col-sm-offset-3 box">
+					<img class="img-responsive center-block" src="assets/images/game.jpg">
+				</div>
+				<div class="col-sm-3 box">
+					<p id="num-wins">Press spacebar to get started!</p>
+
+					<p>Current word:</p>
+					<p id="current-word">What could it be?</p>
+
+					<p>Guesses Remaining: </p>
+					<p id="guesses-remaining">15</p>
+
+					<P>Letters already guessed:</P>
+					<p id="letters-guessed">None so far</p>
+				</div>
+			</div>
+		</div>
+
+
+
+	<!-- Loads the javascript component of the game -->
+	<script src="assets/javascript/game.js" type="text/javascript"></script>
+	<!-- Loads jquery -->
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+
+	</body>
 </html>
